@@ -122,7 +122,7 @@ class PageController extends Controller {
 		$authUrl = $_POST['returnUrl'];
 
 		$result = new JSONResponse("ok");
-		$result->setStatus("302");
+		$result->setStatus(302);
 		$result->addHeader("Location", $authUrl);
 		return $result;
 	}
